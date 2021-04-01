@@ -1,3 +1,10 @@
-<h1>Dashboard</h1>
-<div class="col-md-6">Total Product count: <%= @products.count %></div>
-<div class="col-md-6">Total Category count: <%= @categories.count %></div>
+<h1>Admin >> Dashboard</h1>
+<br>
+<div class="count">
+<div class="col-md-6 label">Total Product count: <%= @products.count %></div>
+<div class="col-md-6 col-md-offset-2 label">Total Category count: <%= @categories.count %></div>
+</div>
+<br><br>
+<div>
+  <%= link_to 'Products',  [:admin, :products] %>
+</div>
